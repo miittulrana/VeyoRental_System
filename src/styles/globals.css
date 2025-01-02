@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #1A0B2E;
+  --color-secondary: #7B2CFF;
+  --color-accent: #BE2CFF;
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-white antialiased;
+  }
+}
+
+@layer components {
+  .btn-hover-effect {
+    @apply transition-all duration-300 ease-in-out hover:shadow-glow;
+  }
+
+  .card-hover-effect {
+    @apply transition-all duration-300 ease-in-out hover:border-secondary/50;
+  }
+
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-secondary to-accent bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 44, 255, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 44, 255, 0.5);
+}
+
+/* Selection */
+::selection {
+  background: rgba(123, 44, 255, 0.3);
+  color: white;
+}
+
+/* Focus Styles */
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(123, 44, 255, 0.5);
+}
+
+/* Base Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(123, 44, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(190, 44, 255, 0.4);
+  }
+}
+
+/* Loading Animation */
+.loading {
+  animation: loading-spin 1s linear infinite;
+}
+
+@keyframes loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,60 @@
+.navbar {
+    background: rgba(26, 11, 46, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-scrolled {
+    background: rgba(26, 11, 46, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #7B2CFF, #BE2CFF);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-button {
+    background: linear-gradient(135deg, #7B2CFF 0%, #BE2CFF 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(190, 44, 255, 0.4);
+  }
+  
+  .mobile-menu {
+    background: rgba(26, 11, 46, 0.95);
+    backdrop-filter: blur(15px);
+  }
+  
+  .mobile-menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .mobile-menu-item:hover {
+    background: rgba(123, 44, 255, 0.1);
+  }

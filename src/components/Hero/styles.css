@@ -1,0 +1,54 @@
+.hero-gradient-text {
+    background: linear-gradient(135deg, #FFFFFF 0%, #7B2CFF 50%, #BE2CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .hero-dashboard {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .hero-dashboard-inner {
+    transform: rotateX(10deg) rotateY(-10deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-dashboard-inner:hover {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  
+  .hero-stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .hero-stat-card:hover {
+    border-color: rgba(123, 44, 255, 0.5);
+    box-shadow: 0 0 20px rgba(190, 44, 255, 0.3);
+  }
+  
+  .hero-button-primary {
+    background: linear-gradient(135deg, #7B2CFF 0%, #BE2CFF 100%);
+    transition: all 0.3s ease;
+  }
+  
+  .hero-button-primary:hover {
+    box-shadow: 0 0 30px rgba(190, 44, 255, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .hero-scroll-indicator {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }

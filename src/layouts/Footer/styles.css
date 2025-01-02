@@ -1,0 +1,60 @@
+.footer {
+    background: linear-gradient(to bottom, rgba(26, 11, 46, 0.8), rgba(26, 11, 46, 1));
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-logo {
+    background: linear-gradient(135deg, #7B2CFF 0%, #BE2CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+    transform: translateX(5px);
+  }
+  
+  .social-icon {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #7B2CFF;
+    transform: translateY(-3px);
+  }
+  
+  .footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+  
+  .contact-info:hover {
+    color: #fff;
+    transform: translateX(5px);
+  }
+  
+  .contact-icon {
+    color: #7B2CFF;
+    margin-right: 0.5rem;
+  }
+  
+  .copyright {
+    color: rgba(255, 255, 255, 0.5);
+  }
