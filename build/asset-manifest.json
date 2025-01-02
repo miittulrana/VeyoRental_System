@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VeyoRental_System/static/css/main.f7f77d91.css",
+    "main.js": "/VeyoRental_System/static/js/main.15f1f459.js",
+    "index.html": "/VeyoRental_System/index.html",
+    "main.f7f77d91.css.map": "/VeyoRental_System/static/css/main.f7f77d91.css.map",
+    "main.15f1f459.js.map": "/VeyoRental_System/static/js/main.15f1f459.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f7f77d91.css",
+    "static/js/main.15f1f459.js"
+  ]
+}
